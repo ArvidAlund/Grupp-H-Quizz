@@ -1,0 +1,68 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp/
+.pnpm-store/
+
+
+# Build / output
+dist/
+build/
+out/
+coverage/
+.nyc_output/
+
+
+# Logs
+logs/
+*.log
+
+
+# Runtime
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+
+# IDE / Editor
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+
+# Caches
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.eslintcache
+
+
+# TypeScript
+*.tsbuildinfo
+
+
+# Misc
+*.tgz
+*.zip
+
+
+# Ignore build artifacts from common tools (uncomment as needed)
+# dist/ # build output
+# public/build/ # other build outputs
