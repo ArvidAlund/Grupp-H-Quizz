@@ -19,8 +19,9 @@ Klicka på knappen Fork (uppe till höger).
 2. Clone = ladda ner till datorn
 På din egen fork (din kopia), klicka på Code → välj SSH eller HTTPS → kopiera länken.
  Öppna terminal/PowerShell och skriv:
+```bash
 git clone <länken du kopierade>
-
+```
 👉 Nu har du projektet på din dator.
 
 3. Skapa en ny gren (branch) för ditt jobb
@@ -31,8 +32,10 @@ git checkout -b min-ändring
 
 4. Gör ändringar + spara dem (commit)
 Efter att du ändrat kod:
+```bash
 git add .
 git commit -m "Jag la till min grej"
+```
 
 👉 Du har nu sparat dina ändringar lokalt.
 
