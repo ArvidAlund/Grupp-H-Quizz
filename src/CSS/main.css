@@ -1,10 +1,13 @@
 @import "./question.css";
+@import "./start.css";
 
 :root {
     /* ===========================
         Färger
       ============================ */
 
+    --color-bg:aliceblue;
+    
     --color-danger: #dc2626;
     --color-success: #16a34a;
     --color-warning: #facc15;
@@ -88,6 +91,10 @@
     font-family: var(--font-family-inter);
 }
 
+h1,h2,h3,h4,h5,h6{
+    margin-bottom: var(--space-sm);
+}
+
 h1 {
     font-size: var(--font-size-h1);
 }
@@ -119,8 +126,13 @@ h6 {
     height: 100dvh;
     align-items: center;
     justify-content: center;
+    background: var(--color-bg);
+    text-align: center;
 }
 
 button{
     border-radius: var(--radius-md);
+    padding: var(--space-sm);
+    font-size: 16px;
+    transition: all 0.3s ease;
 }

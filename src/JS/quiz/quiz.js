@@ -5,6 +5,8 @@ export default async function quiz(category) {
   const data = await fetchData();
   const quizzes = data.quizzes;
 
+  document.getElementById("root").innerHTML = "";
+
   let score = 0;
   let currentIndex = 0;
 
