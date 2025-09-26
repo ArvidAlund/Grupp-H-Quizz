@@ -1,3 +1,5 @@
+@import "./question.css";
+
 :root {
     /* ===========================
         Färger
@@ -83,6 +85,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--font-family-inter);
 }
 
 h1 {
@@ -107,4 +110,17 @@ h5 {
 
 h6 {
     font-size: var(--font-size-h6);
+}
+
+#root{
+    padding: var(--space-sm);
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    border-radius: var(--radius-md);
 }

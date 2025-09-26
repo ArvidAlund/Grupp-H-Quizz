@@ -1,0 +1,35 @@
+.question{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--space-lg);
+}
+
+.question-text{
+    margin-bottom: var(--space-lg);
+    text-align: center;
+}
+
+.answers{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+    list-style: none;
+    width: 100%;
+}
+
+.answers li,.answer-btn{
+    width: 100%;
+    height: clamp(2.5rem, 5vw, 3.063rem);
+}
+
+.answer-btn{
+    cursor: pointer;
+    border-radius: var(--radius-md);
+}
+
+.nextBtn{
+    padding: var(--space-md);
+}
