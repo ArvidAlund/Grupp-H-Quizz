@@ -40,8 +40,10 @@ git commit -m "Jag la till min grej"
 👉 Du har nu sparat dina ändringar lokalt.
 
 ## 5. Ladda upp till din fork på GitHub
-git push origin min-ändring
 
+```bash
+git push origin min-ändring
+```
 👉 Nu ligger dina ändringar på din fork (din egen GitHub-kopia).
 
 ## 6. Skicka en Pull Request
