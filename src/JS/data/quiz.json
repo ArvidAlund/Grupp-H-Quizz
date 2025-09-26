@@ -1,0 +1,64 @@
+{
+  "quizzes": [
+    {
+      "category": "Datorteknik",
+      "questions": [
+        {
+          "question": "Vilket år lanserades den första versionen av Windows?",
+          "options": ["1981", "1985", "1990", "1995"],
+          "answer": "1985"
+        },
+        {
+          "question": "Vilken komponent ansvarar för att utföra beräkningar i en dator?",
+          "options": ["Hårddisken", "Moderkortet", "Processorn (CPU)", "Grafikkortet (GPU)"],
+          "answer": "Processorn (CPU)"
+        },
+        {
+          "question": "Vilket av följande är ett externt lagringsmedium?",
+          "options": ["RAM-minne", "SSD", "USB-minne", "Cache"],
+          "answer": "USB-minne"
+        },
+        {
+          "question": "Vad står förkortningen IP i IP-adress för?",
+          "options": ["Internet Protocol", "Internal Port", "Information Processing", "Integrated Program"],
+          "answer": "Internet Protocol"
+        },
+        {
+          "question": "Vilket företag utvecklade programmeringsspråket Java?",
+          "options": ["Microsoft", "Sun Microsystems", "IBM", "Apple"],
+          "answer": "Sun Microsystems"
+        }
+      ]
+    },
+    {
+      "category": "AI & Maskininlärning",
+      "questions": [
+        {
+          "question": "Vad står AI för?",
+          "options": ["Artificial Intelligence", "Automatic Input", "Advanced Interaction", "Applied Informatics"],
+          "answer": "Artificial Intelligence"
+        },
+        {
+          "question": "Vilket av följande är ett vanligt programmeringsspråk för maskininlärning?",
+          "options": ["Python", "HTML", "CSS", "PHP"],
+          "answer": "Python"
+        },
+        {
+          "question": "Vilken typ av maskininlärning används när modellen lär sig från märkta data?",
+          "options": ["Oövervakad inlärning", "Förstärkningsinlärning", "Övervakad inlärning", "Djupinlärning"],
+          "answer": "Övervakad inlärning"
+        },
+        {
+          "question": "Vilken organisation utvecklade neuronnätsmodellen GPT?",
+          "options": ["Google", "OpenAI", "IBM", "Microsoft"],
+          "answer": "OpenAI"
+        },
+        {
+          "question": "Vilket av följande används för att träna neurala nätverk?",
+          "options": ["Data", "CSS-kod", "Operativsystem", "Webbservrar"],
+          "answer": "Data"
+        }
+      ]
+    }
+  ]
+}
