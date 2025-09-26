@@ -1,6 +1,18 @@
 import fetchData from "../data/fetchData.js";
 import { Question } from "./quizClass.js";
 
+function numQuestions(num, length){
+  let progress = document.querySelector(".progress");
+  if (progress){
+    progress.textContent = num + " / " + length;
+  } else{
+    progress = document.createElement("p");
+    progress.classList.add("progress")
+    progress.textContent = num + " / " + length;
+    root.appendChild(progress);
+  }
+}
+
 export default async function quiz(category) {
   const data = await fetchData();
   const quizzes = data.quizzes;
@@ -36,6 +48,7 @@ export default async function quiz(category) {
 
     root.appendChild(question.render());
     root.appendChild(nextBtn);
+    numQuestions(1,selectedQuiz.questions.length)
   }
 
   // klick på nästa
@@ -43,6 +56,7 @@ export default async function quiz(category) {
         currentIndex++;
         if (currentIndex < selectedQuiz.questions.length) {
             showQuestion(currentIndex);
+            numQuestions(currentIndex + 1,selectedQuiz.questions.length)
             nextBtn.disabled = true;
         } else {
             // Hämta alla highscores
@@ -56,8 +70,6 @@ export default async function quiz(category) {
             }
 
             // Visa resultat
-            root.innerHTML = `<h2>Quiz klart!</h2><p>Din poäng: ${score}</p>
-                            <p>Highscore (${category}): ${highscores[category]}</p>`;
         }
     });
 

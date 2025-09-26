@@ -33,3 +33,8 @@
 .nextBtn{
     padding: var(--space-md);
 }
+
+.progress{
+    margin-top: var(--space-md);
+    font-weight: bold;
+}
