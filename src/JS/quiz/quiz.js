@@ -70,6 +70,17 @@ export default async function quiz(category) {
             }
 
             // Visa resultat
+
+            root.innerHTML = `
+                <h2>Quiz slutfört!</h2>
+                <p>Ditt resultat: ${score} av ${selectedQuiz.questions.length}</p>
+                <p>Din högsta poäng i kategorin "${category}": ${highscores[category]}</p>
+                <button id="restart-btn">Starta om</button>
+            `;
+
+            document.getElementById("restart-btn").addEventListener("click", () => {
+                location.reload();
+            });
         }
     });
 
