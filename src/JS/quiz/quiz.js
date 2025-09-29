@@ -77,7 +77,17 @@ export default async function quiz(category) {
                 <p>Din högsta poäng i kategorin "${category}": ${highscores[category]}</p>
                 <button id="restart-btn">Starta om</button>
             `;
+            // Gömmer emoji-knappen på resultatsidan.
+             const emojiBtn = document.getElementById("restart-btn");
+             const floatingBtn = document.querySelector("body > #restart-btn"); // den som skapas i main.js
+        if (floatingBtn) {
+           floatingBtn.classList.add("hidden");
+ }
 
+// Restart för textknappen i resultatet
+emojiBtn.addEventListener("click", () => {
+    location.reload();
+});
             document.getElementById("restart-btn").addEventListener("click", () => {
                 location.reload();
             });

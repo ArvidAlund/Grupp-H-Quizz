@@ -12,5 +12,17 @@ document.querySelector("#start-btn").addEventListener("click", ()=>{
         return
     }
     
-    quiz(category)
-})
+ quiz(category);
+
+    // 🔄 Lägg till restart-knapp när quiz startar
+    if (!document.getElementById("restart-btn")) {
+        const restartBtn = document.createElement("button");
+        restartBtn.id = "restart-btn";
+        restartBtn.textContent = "🔄";
+        document.body.appendChild(restartBtn);
+
+        restartBtn.addEventListener("click", () => {
+            location.reload();
+        });
+    }
+});

@@ -1,21 +1,82 @@
-.category-btn {
-    margin: 12px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+
+body {
+  background: linear-gradient(135deg, #001f3f, #003366); 
+  font-family: Arial, sans-serif;
+  color: #3b4a75; 
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#start-btn {
-    padding-left: 40px;
-    padding-right: 40px;
-    margin: 12px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+
+#root {
+  background: rgba(255, 255, 255, 0.1); 
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  max-width: 600px;
+  width: 90%;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+
+h1, h2 {
+  margin-bottom: 20px;
+  color: #000000;
+  animation: fadeIn 2s ease-in-out;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 10px 0 20px;
+}
+
+
+button {
+  background-color: #0074D9;
+  color: rgb(15, 15, 59);
+  padding: 12px 24px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
 }
 
 button:hover {
-    background-color: rgb(118, 176, 226);
-    cursor: pointer;
-    scale: 1.05;
+  background-color: #339CFF;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+#restart-btn {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+#restart-btn:hover {
+  transform: translateX(-50%) scale(1.2);
+}
+/* Animationer*/
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+
+.hidden {
+  display: none;
 }
